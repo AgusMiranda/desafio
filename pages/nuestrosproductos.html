@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Korashe Ind</title>
+
+
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+    
+    <!--link css-->
+    <link rel="stylesheet" href="../css/main.css">
+
+    <!--Google Fonts-->
+    
+    <link rel = "preconnect" href = "https://fonts.googleapis.com">
+    <link rel = "preconnect" href = "https://fonts.gstatic.com" crossorigin>
+    <link href = "https: //fonts.googleapis.com/css2? family = Roboto: ital, wght @ 0,100; 1,300; 1,400; 1,900 & display = swap "rel =" stylesheet ">
+    
+</head>
+<body>
+    <!--Inicio del header-->
+    <header id="Arriba">
+        <h1>Korashe Calzados</h1>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">  KORASHE</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Nuestros Productos
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="../pages/nuestrosproductos.html">Zapatillas</a></li>
+                      <li><a class="dropdown-item" href="../pages/nuestrosproductos.html">Borcegos</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../pages/pago.html">Formas de pago</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../pages/contacto.html" class="color">Nosotros</a>
+                  </li>
+                  
+                </ul>
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <!--fin del header-->
+
+    <!--Seccion principal-->
+    <main class="seccion-principal">
+        <section>
+            <h2>Nuestros productos</h2>
+        </section>
+
+        <section>
+            <!--Seccion de borcegos-->
+            <h3>Borcegos</h3>
+            <img class="imagenTamaño" src="../archivos/img/borcegos/borcego-1.png" alt="Borcegos1">
+            <img class="imagenTamaño" src="../archivos/img/borcegos/borcego-2.png" alt="">
+            <video class="videoTamaño" src="../archivos/video/vid-borcegos/VID-20210527-WA0005.mp4" autoplay loop controls>Los mejores borcegos</video>
+        </section>
+        <!--Seccion zapatillas-->
+        <section>
+            <h3 >Zapatillas</h3>
+            <img class="imagenTamaño" src="../archivos//img/zapatillas/zapatillas-01.png" alt="Zapatillas1">
+            <img class="imagenTamaño" src="../archivos/img/zapatillas/zapatilla-2.png" alt="Zapatillas-02">
+            <video class="videoTamaño" src="../archivos/video/vid-zapatillas/VID-20210528-WA0012.mp4" controls autoplay loop >Las mejores zapas</video>
+        </section>
+    </main>
+    <!--Fin seccion principal-->
+
+    <!--Inicio pie de pagina-->
+    <footer id="grad">
+        <h3 id="contacto">¿Queres contactarte con nosotros?</h3>
+            <a id="redireccion" href="contacto.html">¡Toca aca!</a>
+            <!--Se uso HR para separar-->
+            <hr>
+              <!--Seccion redes sociales-->
+        <ul>
+            <li>
+                <a href="https://www.instagram.com/korashe.ind/" target="blanc">Instagram</a>
+            </li>
+            <li>
+                <a href="https://www.facebook.com" target="blanc">Facebook</a>
+            </li>
+            <li>
+                <a href="https://www.twitter.com" target="blanc">Twitter</a>
+            </li>
+        </ul>
+        <!--Se agrego para subir mas rapido-->
+        <a href="#Arriba">Ir arriba</a>
+    </footer>
+    <!--Fin de pie de pagina-->
+
+</body>
+</html>

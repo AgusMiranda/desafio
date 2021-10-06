@@ -1,0 +1,297 @@
+/*CSS INDEX.HTML*/
+
+body{
+    background-color: black;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/*Color y fuente titulo principal*/
+h1{
+    font-family: 'anton';
+    text-transform: uppercase;
+    font-weight: lighter;
+    font-size: 8rem;
+    color:black;
+    text-shadow: 2px 2px black;
+    text-align: center;
+    background-size: contain;
+    background-image: url(../archivos/img/image.png);
+    background-position: center;
+    margin: 125px;
+}
+
+
+/*Formato a la lista del nav*/
+
+
+nav div a img{
+    width: 90px;
+}
+
+.navbar-brand{
+    transition: 2s;
+}
+
+.navbar-brand:hover{
+    transform: scale(2);
+}
+
+
+
+/*Seccion principal*/
+h2{
+    font-family: 'roboto';
+    font-weight: 900;
+    text-align: center; 
+}
+
+
+.seccionPrincipal{
+    font-family: 'roboto' ;
+    font-weight: 100;   
+    font-size: 30px;
+    padding: 10px;
+    margin: 10px;
+    border: solid black 3px;
+    
+}
+
+/*seccion carousel*/
+
+.carousel-inner img{
+    width: 100%;
+    max-height: 500px;
+    }
+    
+    .carousel-inner{
+    height: 550px
+    }
+
+    .carousel { 
+        margin-top: 80px;
+    }
+
+
+
+/*seccion de presentacion*/
+
+section .imagenFondo{
+    background-size: 100px;
+    background-repeat: repeat;
+}
+
+main section p{
+    color: black;
+}
+
+/*seccion fotos*/
+/*tambien se va a usar para el html nuestros productos*/
+.imagenTamaño{
+    margin: 10px;
+    margin-right: 20px;
+    padding: 5px;
+    border: double black 3px;
+    width: 250px;
+    height: 250px;
+
+}
+
+    #seccion2 {
+    display: inline-block;
+    align-items: center;
+    justify-content: end;
+
+}
+
+.grid-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.videoTamaño{
+    width: 400px;
+    height: 400px;
+    margin: 10px;
+    padding: 10px;
+    border: double black 3px;
+}
+
+
+.imagenTamaño{
+    transition: 2deg;
+}
+
+.imagenTamaño:hover{
+    
+    transform:translate(10px, 20px)
+}
+
+/*Seccion mas vendidos*/
+.masVendidos{
+    
+}
+
+/*Seccion principal de formas de pagos*/
+
+.pagos{
+    width: 800px;
+    height: 800px;
+    
+}
+
+
+/*Pie de pagina*/
+
+
+/*titulo h3*/
+h3{
+    font-family: 'roboto';
+    font-weight: 900 ;
+    color: black;
+    text-align: center;
+}
+
+/*formato etiqueta <a>*/
+
+.redireccionContacto {
+    font-family: 'roboto';
+    color: blue;
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+    flex: 1;
+}
+
+.redireccionContacto{
+    transition: font-size 2s;
+}
+
+.redireccionContacto:hover{
+    font-size: 30px;
+    
+}
+
+/*seccion redes sociales*/
+ footer ul li {
+    font-family: 'roboto';
+    font-size: 15px;
+    font-weight: 900;
+    list-style-position: outside;
+    list-style:square;
+    display: flex;
+    margin: 0px;
+    padding: 5px;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+
+
+footer{
+    padding: 3rem;
+   
+}
+
+
+
+
+/*media querie*/
+
+@media only screen and (max-width: 768px) {
+        body{
+            background-color: rgb(238,174,202);
+        }
+
+        .grid-container{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;  
+            grid-template-rows: 3fr;
+            align-items: center;
+            justify-items: center;
+            grid-template-areas: 
+                "nav"
+                "seccion1"
+                "seccion2"
+                "footer"
+                "footer"
+        }
+
+          header nav{
+                grid-row: auto;
+                }
+        
+            
+            #nav{
+                grid-area: nav;
+                grid-row: 1fr;
+            }
+            
+            #seccion1{
+                grid-area: seccion1;
+            }
+            
+            #seccion2{
+                grid-area: seccion2;
+            }
+            
+            #footer{
+                grid-area: footer;
+            }
+            
+            .grid-container img{
+                display: inline-block;
+                align-self: center;
+            }
+
+            .carousel-inner img{
+                width:100%;
+                max-height: 100%;
+                }
+                
+                .carousel-inner{
+                height: 100%;
+                }
+            
+                .carousel { 
+                    margin-top: 100px;
+                }
+
+                .imagenTamaño{
+                    height: 90%;
+                }
+            
+      }
+
+      
+
+
+/*media querie mobile*/
+
+@media only screen and ( max-width: 576px) {
+    .grid-container { 
+        display: flex;
+        align-self: center;
+        }
+
+        .carousel-inner img{
+            width:100%;
+            max-height: 100%;
+            }
+            
+            .carousel-inner{
+            height: 100%;
+            }
+        
+            .carousel { 
+                margin-top: 100px;
+            }
+
+
+    }
+
